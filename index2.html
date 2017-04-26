@@ -5,9 +5,19 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title></title>
 	<link rel="stylesheet" href="">
+	<script src="https://unpkg.com/vue/dist/vue.js"></script>
 </head>
 <body>
-	333
-	444
+<div id="app">
+	{{ message }}
+</div>
+<script type="text/javascript">
+	var app = new Vue({
+		el: '#app',
+		data: {
+			message: 'hello vue'
+		}
+	})
+</script>
 </body>
 </html>
